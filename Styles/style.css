@@ -21,13 +21,13 @@
     padding: 20px 0 80px 0;
 }
 
-.menu{display: flex; width: 100%;}
+.menu{display: flex; width: 100%;align-items: center;}
 
 .logo-menu{
     width: 50%;
 }
 nav .nav{
-    display: inline-block;
+    align-items: center;
     text-decoration: none;
     color: #ffff;
     font-weight: bold;
@@ -54,13 +54,18 @@ nav .nav:hover{
 }
 
 .mockup{
-    padding-top: 115px;
+    padding-top: 100px;
     text-align: center;
     display: block;
     width: 100%;
     color: white;
 }
 .mockup > h2{
+    margin-bottom: 10px;
     font-size: 40px;
     font-weight: 100;
+}
+#mockup-image{
+    max-width: 100%;
+    margin-top: 40px;
 }
