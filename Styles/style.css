@@ -14,10 +14,10 @@
 }
 
 .bg{
-    background-image: url(../Images/bg.svg);
+    background-color:rgb(48, 84, 243);
     background-position: 100%;
-    background-size: cover;
-    min-height: 700px;
+    min-height: 40%;
+    max-height: 400px;
     padding: 20px 0 80px 0;
 }
 
@@ -25,7 +25,18 @@
 
 .logo-menu{
     width: 50%;
+    color: white;
 }
+.logo-menu > h2{
+    color: rgb(243, 205, 35);
+    font-weight: 300;
+    font-size: 26px;
+}
+.logo-menu > h2 > strong{
+    color: white;
+}
+
+
 nav .nav{
     align-items: center;
     text-decoration: none;
@@ -68,4 +79,63 @@ nav .nav:hover{
 #mockup-image{
     max-width: 100%;
     margin-top: 40px;
+}
+
+section > div.plataforms{
+    padding: 100px 0;
+}
+
+section > div.plataforms img{
+    width: calc(100% / 5);
+}
+
+section.pqnos{
+    padding: 40px 0;
+    background-color: #FBFCFE;
+
+}
+section.pqnos > .center{
+    max-width: 1280px;
+}
+
+section.pqnos > .center > h2{ /* Título da sessão "Por que nós?" */
+    font-size: 64px;
+    color: #161616;
+    text-align:center;
+    width: 100%;
+}
+section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
+    font-size: 18px;
+    color: #a0a0a0;
+    text-align:center;
+    width: 100%;
+}
+
+.diferenciais > div{
+    display: flex;
+    margin-top: 60px;
+}
+
+.box-diferenciais > div{
+    box-shadow: 0 20px 40px #a0a0a0;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.box-diferenciais > div > h3{
+    font-size: 28px;
+    color: black;
+    margin: 10px 0;
+}
+.box-diferenciais > div > p{
+    color: #a0a0a0;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.icon > img{
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
