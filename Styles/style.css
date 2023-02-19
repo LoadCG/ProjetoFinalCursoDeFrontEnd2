@@ -117,7 +117,7 @@ section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
 }
 
 .box-diferenciais > div{
-    box-shadow: 0 20px 40px #a0a0a0;
+    box-shadow: 0px 20px 40px #a0a0a0;
     width: 31%;
     margin-right: 2%;
     padding: 10px 20px;
@@ -138,4 +138,30 @@ section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
     height: 80px;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+/*Design Responsivo*/
+@media screen and (max-width: 768px){
+        
+    .diferenciais > div{
+        display: flex;
+        margin-top: 10%;
+        flex-wrap: wrap;
+        box-shadow: inset #a0a0a0;
+    }
+
+    .box-diferenciais > div{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 7%;
+    }
+
+    section > div.plataforms{
+        text-align: center;
+    }
+    
+    section > div.plataforms img{
+        max-width: 100%;
+    }
+
 }
