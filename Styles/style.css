@@ -27,6 +27,7 @@
     width: 50%;
 }
 nav .nav{
+    display: inline-block;
     text-decoration: none;
     color: #ffff;
     font-weight: bold;
@@ -50,4 +51,16 @@ nav .nav:hover{
 #contact-bnt:hover{
     cursor: pointer;
     border-radius: 15px;
+}
+
+.mockup{
+    padding-top: 115px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: white;
+}
+.mockup > h2{
+    font-size: 40px;
+    font-weight: 100;
 }
