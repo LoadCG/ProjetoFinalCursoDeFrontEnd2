@@ -74,11 +74,16 @@ nav .nav:hover{
 .mockup > h2{
     margin-bottom: 10px;
     font-size: 40px;
-    font-weight: 100;
+    font-weight: 200;
+}
+.mockup > p{
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 20px;
 }
 #mockup-image{
+    max-height: 600px;
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 section > div.plataforms{
@@ -138,6 +143,37 @@ section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
     height: 80px;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+section.cta{
+    background-image: url(../images/banner_meio.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    height: 250px;
+    min-height: 200px;
+    color: white;
+}
+
+section.cta > h2,
+section.cta > h4{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+section.cta > h2{
+    font-size: 30px;
+}
+
+section.cta > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(53, 3, 170);
+    display: inline-block;
+    width: 332px;
+    height: 68px;
+    background-color: #FFDD33;
+    text-decoration: none;
+    border-radius: 15px;
 }
 
 /*Design Responsivo*/
