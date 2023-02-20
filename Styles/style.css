@@ -239,7 +239,23 @@ section.beneficios{
     max-width: 100%;
 }
 
+section.depoimentos{
+    background-color: #FBFCFE;
+    padding: 40px 0;
+}
+section.depoimentos > h1{
+    text-align: center;
+    font-size: 42px;
+}
 
+.container-slider{
+    overflow: hidden;
+}
+.container-slider-single{
+    float: left;
+    background-color: white;
+    padding: 10px;
+}
 
 
 /*Design Responsivo*/
