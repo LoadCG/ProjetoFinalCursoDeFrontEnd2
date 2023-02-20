@@ -251,12 +251,14 @@ section.depoimentos > h1{
 .container-slider{
     overflow: hidden;
 }
-.container-slider-single{
+.container-slider > .container-slider-single{
     float: left;
     background-color: white;
     padding: 10px;
 }
-
+#divdisplayblock{
+    display: block;
+}
 
 /*Design Responsivo*/
 @media screen and (max-width: 768px){
