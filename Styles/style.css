@@ -161,20 +161,19 @@ section.cta{
     text-align: center;
     color: white;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding: 5%;
-    padding-top: calc(5% - 20px);
+    padding: 2%;
 }
 
 section.cta > h4{
     font-weight: normal;
-    margin: 10px 0;
+    margin: auto 0;
 }
 
 section.cta > h2{
     font-weight: normal;
     font-size: 30px;
+    margin: auto 0;
 }
 
 section.cta > a{
@@ -186,7 +185,8 @@ section.cta > a{
     background-color: #FFDD33;
     text-decoration: none;
     border-radius: 15px;
-    margin-top: 10px;
+    margin: auto auto;
+    max-width: 250px;
 }
 section.cta > a:hover{
     transition: 0.5s;
@@ -195,6 +195,52 @@ section.cta > a:hover{
 section.cta > a:active{
     background-color: #dfc12d;
 }
+/*Section Benefícios*/
+
+section.beneficios{
+    padding: 50px 0;
+}
+
+.lista-beneficios{
+    width: 40%;
+    align-items: center;
+    margin: calc(5% + 10px) 0;
+}
+.lista-beneficios h2{
+    font-size: 36px;
+    margin-bottom: 4%;
+    margin-left: 10%;
+    color: black;
+}
+.lista-beneficios > p:hover{
+    transition: 1s;
+    background-color: rgba(203, 191, 255, 0.295);
+    color: black;
+    border-radius: 15px;
+}
+.lista-beneficios > p span{
+    vertical-align: middle;
+    margin: auto 0;
+    display: inline-block;
+    width: calc(100% - 70px);
+    color: #586679;
+}
+.lista-beneficios > p img/*checklist-img*/{
+    margin: auto 0;
+    margin-top: 2.5%;
+    width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.img-beneficios{
+    width: 60%;
+}
+.img-beneficios img{
+    max-width: 100%;
+}
+
+
+
 
 /*Design Responsivo*/
 @media screen and (max-width: 768px){
@@ -233,5 +279,17 @@ section.cta > a:active{
         width: 33%;
         max-width: 100%;
     }
-
+    section.cta{
+        padding: 5%;
+    }
+    .lista-beneficios{
+        margin: 5% 0;
+    }
+    .lista-beneficios > p{
+        margin-bottom: 3%;
+    }
+    .lista-beneficios,.img-beneficios{
+        margin-bottom: 30px;
+        width: 100%;
+    }
 }
