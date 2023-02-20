@@ -27,6 +27,9 @@
     width: 50%;
     color: white;
 }
+.logo-menu:hover{
+    cursor: default;
+}
 .logo-menu > h2{
     color: rgb(243, 205, 35);
     font-weight: 300;
@@ -60,8 +63,13 @@ nav .nav:hover{
     border-radius: 13px;
 }
 #contact-bnt:hover{
+    transition: 0.5s;
+    background-color: rgb(46, 2, 146);
     cursor: pointer;
     border-radius: 15px;
+}
+#contact-btn:active{
+    background-color: red;
 }
 
 .mockup{
@@ -148,36 +156,60 @@ section.cta{
     background-image: url(../images/banner_meio.svg);
     background-size: cover;
     background-position: center;
-    padding: 20px 10px;
     height: 250px;
     min-height: 200px;
+    text-align: center;
     color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    padding-top: calc(5% - 20px);
 }
 
-section.cta > h2,
 section.cta > h4{
     font-weight: normal;
     margin: 10px 0;
 }
 
 section.cta > h2{
+    font-weight: normal;
     font-size: 30px;
 }
 
 section.cta > a{
     font-size: 18px;
-    font-weight: bold;
-    color: rgb(53, 3, 170);
+    font-weight: 800;
+    color: rgb(15,63,211);
     display: inline-block;
-    width: 332px;
-    height: 68px;
+    padding: 20px 16px;
     background-color: #FFDD33;
     text-decoration: none;
     border-radius: 15px;
+    margin-top: 10px;
+}
+section.cta > a:hover{
+    transition: 0.5s;
+    color: black;
+}
+section.cta > a:active{
+    background-color: #dfc12d;
 }
 
 /*Design Responsivo*/
 @media screen and (max-width: 768px){
+
+    .mockup > h2{
+        margin: 0 auto;
+        font-size: 35px;
+        font-weight: 200;
+    }
+
+    .mockup > p{
+        margin: 0 auto;
+        color: rgba(255, 255, 255, 0.842);
+        font-size: 18px;
+    }
         
     .diferenciais > div{
         display: flex;
@@ -197,6 +229,8 @@ section.cta > a{
     }
     
     section > div.plataforms img{
+        margin: 0 auto;
+        width: 33%;
         max-width: 100%;
     }
 
