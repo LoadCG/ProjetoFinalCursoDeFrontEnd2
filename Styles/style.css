@@ -118,7 +118,7 @@ section.pqnos > .center > h2{ /* Título da sessão "Por que nós?" */
     width: 100%;
 }
 section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
-    font-size: 18px;
+    font-size: 20px;
     color: #a0a0a0;
     text-align:center;
     width: 100%;
@@ -136,6 +136,14 @@ section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
     padding: 10px 20px;
     border-radius: 15px;
 }
+.box-diferenciais > div:hover{
+    transition: 0.5s;
+    background-color: rgb(248, 248, 248);
+    cursor: default;
+}
+.box-diferenciais > div:active{
+    background-color: rgb(228, 228, 240);
+}
 
 .box-diferenciais > div > h3{
     font-size: 28px;
@@ -143,8 +151,8 @@ section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
     margin: 10px 0;
 }
 .box-diferenciais > div > p{
-    color: #a0a0a0;
-    font-size: 13px;
+    color: #808080;
+    font-size: 16px;
     margin-bottom: 30px;
 }
 .icon > img{
@@ -256,8 +264,43 @@ section.depoimentos > h1{
     background-color: white;
     padding: 10px;
 }
-#divdisplayblock{
-    display: block;
+.slick-slide{
+    margin-left: 27px;
+}
+div.depoimentoTitle > h1{
+    text-align: center;
+    font-size: 54px;
+    margin-bottom: 60px;
+}
+div.depoimentosContent{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+}
+div.depoimentosContentDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(189, 188, 248, 0.137);
+    border-radius: 20px;
+    gap: 10px;
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+}
+div.depoimentosContentDiv:hover{
+    transition: 1s;
+    background-color: rgba(188, 189, 248, 0.363);
+    color: black;
+}
+div.depoimentosContentDiv:active{
+    background-color: rgba(169, 170, 248, 0.753);
+}
+div.depoimentosContent > p{
+    text-align: center;
+    color: #161616;
 }
 
 /*Design Responsivo*/
