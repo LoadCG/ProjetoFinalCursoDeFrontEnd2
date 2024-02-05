@@ -47,10 +47,10 @@ nav .nav{
     font-weight: bold;
     width: 50%;
     margin: 0 10px;
-}
-nav .nav:hover{
     transition: 0.1s;
     cursor: pointer;
+}
+nav .nav:hover{
     border-bottom: 2px solid rgb(255, 230, 0);
 }
 
@@ -61,11 +61,11 @@ nav .nav:hover{
     background-color: rgb(53, 3, 170);
     padding: 10px 20px;
     border-radius: 13px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 #contact-bnt:hover{
-    transition: 0.5s;
     background-color: rgb(46, 2, 146);
-    cursor: pointer;
     border-radius: 15px;
 }
 #contact-btn:active{
@@ -135,11 +135,11 @@ section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
     margin-right: 2%;
     padding: 10px 20px;
     border-radius: 15px;
+    transition: 0.5s;
+    cursor: default;
 }
 .box-diferenciais > div:hover{
-    transition: 0.5s;
     background-color: rgb(248, 248, 248);
-    cursor: default;
 }
 .box-diferenciais > div:active{
     background-color: rgb(228, 228, 240);
@@ -195,9 +195,9 @@ section.cta > a{
     border-radius: 15px;
     margin: auto auto;
     max-width: 250px;
+    transition: 0.5s;
 }
 section.cta > a:hover{
-    transition: 0.5s;
     color: black;
 }
 section.cta > a:active{
@@ -220,8 +220,10 @@ section.beneficios{
     margin-left: 10%;
     color: black;
 }
-.lista-beneficios > p:hover{
+.lista-beneficios > p{
     transition: 1s;
+}
+.lista-beneficios > p:hover{
     background-color: rgba(203, 191, 255, 0.295);
     color: black;
     border-radius: 15px;
@@ -289,9 +291,9 @@ div.depoimentosContentDiv{
     height: 100%;
     width: 30%;
     padding: 20px;
+    transition: 1s;
 }
 div.depoimentosContentDiv:hover{
-    transition: 1s;
     background-color: rgba(188, 189, 248, 0.363);
     color: black;
 }
