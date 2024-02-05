@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
-.center{
+.center {
     display: flex;
     max-width: 1100px;
     padding: 0 2%;
@@ -13,48 +13,60 @@
     flex-wrap: wrap;
 }
 
-.bg{
-    background-color:rgb(48, 84, 243);
+.bg {
+    background-color: rgb(48, 84, 243);
     background-position: 100%;
     min-height: 40%;
     max-height: 400px;
     padding: 20px 0 80px 0;
 }
 
-.menu{display: flex; width: 100%;align-items: center;}
+.menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
 
-.logo-menu{
+.logo-menu {
     width: 50%;
     color: white;
-}
-.logo-menu:hover{
     cursor: default;
 }
-.logo-menu > h2{
+
+.logo-menu>h2 {
     color: rgb(243, 205, 35);
     font-weight: 300;
     font-size: 26px;
 }
-.logo-menu > h2 > strong{
+
+.logo-menu>h2>strong {
     color: white;
 }
 
+button{
+    border: none;
+    outline: none;
+    background-color: rgb(48, 84, 243);
+    transition: 0.5s ease;
+}
 
 nav .nav{
     align-items: center;
     text-decoration: none;
-    color: #ffff;
+    color: #fff;
     font-weight: bold;
     width: 50%;
     margin: 0 10px;
     transition: 0.1s;
     cursor: pointer;
 }
-nav .nav:hover{
+
+
+nav .nav:hover {
     border-bottom: 2px solid rgb(255, 230, 0);
 }
 
-#contact-bnt{
+#contact-bnt {
     color: #ffff;
     font-weight: bold;
     text-decoration: none;
@@ -64,72 +76,87 @@ nav .nav:hover{
     transition: 0.5s;
     cursor: pointer;
 }
-#contact-bnt:hover{
+ 
+
+#contact-bnt:hover {
     background-color: rgb(46, 2, 146);
     border-radius: 15px;
 }
-#contact-btn:active{
+
+#contact-btn:active {
     background-color: red;
 }
 
-.mockup{
+.mockup {
     padding-top: 100px;
     text-align: center;
     display: block;
     width: 100%;
     color: white;
 }
-.mockup > h2{
+
+.mockup>h2 {
     margin-bottom: 10px;
     font-size: 40px;
     font-weight: 200;
 }
-.mockup > p{
+
+.mockup>p {
     color: rgba(255, 255, 255, 0.842);
     font-size: 20px;
 }
-#mockup-image{
+
+#mockup-image {
     max-height: 600px;
     max-width: 100%;
     margin-top: 60px;
 }
 
-section > div.plataforms{
+section>div.platforms {
     padding: 100px 0;
 }
 
-section > div.plataforms img{
+section>div.platforms img {
     width: calc(100% / 5);
+    transition: 3s ease;
 }
 
-section.pqnos{
+section>div.platforms img:hover {
+    transform: scale(1.15);
+}
+
+section.pqnos {
     padding: 40px 0;
     background-color: #FBFCFE;
 
 }
-section.pqnos > .center{
+
+section.pqnos>.center {
     max-width: 1280px;
 }
 
-section.pqnos > .center > h2{ /* Título da sessão "Por que nós?" */
+section.pqnos>.center>h2 {
+    /* Título da sessão "Por que nós?" */
     font-size: 64px;
     color: #161616;
-    text-align:center;
-    width: 100%;
-}
-section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
-    font-size: 20px;
-    color: #a0a0a0;
-    text-align:center;
+    text-align: center;
     width: 100%;
 }
 
-.diferenciais > div{
+section.pqnos>.center>p {
+    /* Texto da sessão "Por que nós?" */
+    font-size: 20px;
+    color: #a0a0a0;
+    text-align: center;
+    width: 100%;
+}
+
+.diferenciais>div {
     display: flex;
     margin-top: 60px;
 }
 
-.box-diferenciais > div{
+.box-diferenciais>div {
     box-shadow: 0px 20px 40px #a0a0a0;
     width: 31%;
     margin-right: 2%;
@@ -138,29 +165,34 @@ section.pqnos > .center > p{ /* Texto da sessão "Por que nós?" */
     transition: 0.5s;
     cursor: default;
 }
-.box-diferenciais > div:hover{
+
+.box-diferenciais>div:hover {
     background-color: rgb(248, 248, 248);
 }
-.box-diferenciais > div:active{
+
+.box-diferenciais>div:active {
     background-color: rgb(228, 228, 240);
 }
 
-.box-diferenciais > div > h3{
+.box-diferenciais>div>h3 {
     font-size: 28px;
     color: black;
     margin: 10px 0;
 }
-.box-diferenciais > div > p{
+
+.box-diferenciais>div>p {
     color: #808080;
     font-size: 16px;
     margin-bottom: 30px;
 }
-.icon > img{
+
+.icon>img {
     height: 80px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-section.cta{
+
+section.cta {
     background-image: url(../images/banner_meio.svg);
     background-size: cover;
     background-position: center;
@@ -173,21 +205,21 @@ section.cta{
     padding: 2%;
 }
 
-section.cta > h4{
+section.cta>h4 {
     font-weight: normal;
     margin: auto 0;
 }
 
-section.cta > h2{
+section.cta>h2 {
     font-weight: normal;
     font-size: 30px;
     margin: auto 0;
 }
 
-section.cta > a{
+section.cta>a {
     font-size: 18px;
     font-weight: 800;
-    color: rgb(15,63,211);
+    color: rgb(15, 63, 211);
     display: inline-block;
     padding: 20px 16px;
     background-color: #FFDD33;
@@ -197,91 +229,110 @@ section.cta > a{
     max-width: 250px;
     transition: 0.5s;
 }
-section.cta > a:hover{
+
+section.cta>a:hover {
     color: black;
 }
-section.cta > a:active{
+
+section.cta>a:active {
     background-color: #dfc12d;
 }
+
 /*Section Benefícios*/
 
-section.beneficios{
+section.beneficios {
     padding: 50px 0;
 }
 
-.lista-beneficios{
+.lista-beneficios {
     width: 40%;
     align-items: center;
     margin: calc(5% + 10px) 0;
 }
-.lista-beneficios h2{
+
+.lista-beneficios h2 {
     font-size: 36px;
     margin-bottom: 4%;
     margin-left: 10%;
     color: black;
 }
-.lista-beneficios > p{
+
+.lista-beneficios>p {
     transition: 1s;
 }
-.lista-beneficios > p:hover{
+
+.lista-beneficios>p:hover {
     background-color: rgba(203, 191, 255, 0.295);
     color: black;
     border-radius: 15px;
 }
-.lista-beneficios > p span{
+
+.lista-beneficios>p span {
     vertical-align: middle;
     margin: auto 0;
     display: inline-block;
     width: calc(100% - 70px);
     color: #586679;
 }
-.lista-beneficios > p img/*checklist-img*/{
+
+.lista-beneficios>p img
+
+/*checklist-img*/
+    {
     margin: auto 0;
     margin-top: 2.5%;
     width: 70px;
     display: inline-block;
     vertical-align: middle;
 }
-.img-beneficios{
+
+.img-beneficios {
     width: 60%;
 }
-.img-beneficios img{
+
+.img-beneficios img {
     max-width: 100%;
 }
 
-section.depoimentos{
+section.depoimentos {
     background-color: #FBFCFE;
     padding: 40px 0;
 }
-section.depoimentos > h1{
+
+section.depoimentos>h1 {
     text-align: center;
     font-size: 42px;
 }
 
-.container-slider{
+.container-slider {
     overflow: hidden;
 }
-.container-slider > .container-slider-single{
+
+.container-slider>.container-slider-single {
     float: left;
     background-color: white;
     padding: 10px;
 }
-.slick-slide{
+
+.slick-slide {
     margin-left: 27px;
 }
-div.depoimentoTitle > h1{
+
+div.depoimentoTitle>h1 {
     text-align: center;
     font-size: 54px;
     margin-bottom: 60px;
 }
-div.depoimentosContent{
+
+div.depoimentosContent {
     display: flex;
     justify-content: space-around;
     width: 90%;
     margin: 0 auto;
     gap: 30px;
 }
-div.depoimentosContentDiv{
+
+div.depoimentosContentDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,65 +344,74 @@ div.depoimentosContentDiv{
     padding: 20px;
     transition: 1s;
 }
-div.depoimentosContentDiv:hover{
+
+div.depoimentosContentDiv:hover {
     background-color: rgba(188, 189, 248, 0.363);
     color: black;
 }
-div.depoimentosContentDiv:active{
+
+div.depoimentosContentDiv:active {
     background-color: rgba(169, 170, 248, 0.753);
 }
-div.depoimentosContent > p{
+
+div.depoimentosContent>p {
     text-align: center;
     color: #161616;
 }
 
-/*Design Responsivo*/
-@media screen and (max-width: 768px){
 
-    .mockup > h2{
+/*Design Responsivo*/
+@media screen and (max-width: 768px) {
+
+    .mockup>h2 {
         margin: 0 auto;
         font-size: 35px;
         font-weight: 200;
     }
 
-    .mockup > p{
+    .mockup>p {
         margin: 0 auto;
         color: rgba(255, 255, 255, 0.842);
         font-size: 18px;
     }
-        
-    .diferenciais > div{
+
+    .diferenciais>div {
         display: flex;
         margin-top: 10%;
         flex-wrap: wrap;
         box-shadow: inset #a0a0a0;
     }
 
-    .box-diferenciais > div{
+    .box-diferenciais>div {
         width: 100%;
         margin-right: 0;
         margin-bottom: 7%;
     }
 
-    section > div.plataforms{
+    section>div.platforms {
         text-align: center;
     }
-    
-    section > div.plataforms img{
+
+    section>div.platforms img {
         margin: 0 auto;
         width: 33%;
         max-width: 100%;
     }
-    section.cta{
+
+    section.cta {
         padding: 5%;
     }
-    .lista-beneficios{
+
+    .lista-beneficios {
         margin: 5% 0;
     }
-    .lista-beneficios > p{
+
+    .lista-beneficios>p {
         margin-bottom: 3%;
     }
-    .lista-beneficios,.img-beneficios{
+
+    .lista-beneficios,
+    .img-beneficios {
         margin-bottom: 30px;
         width: 100%;
     }
